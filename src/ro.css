@@ -1,0 +1,151 @@
+html {
+	background-color: rgb(235, 235, 235);
+}
+.mini {
+	position: fixed;
+	max-width: 60px;
+	height: auto;
+	bottom: 30px;
+	right: 30px;
+}
+
+.chat-container {
+	display: block;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	width: 380px;
+	box-shadow: -5px 5px 15px grey;
+}
+
+.header-image {
+	max-width: 45px;
+	height: auto;
+}
+
+.messages-container {
+	display: grid;
+	grid-auto-rows: minmax(min-content, max-content);
+	height: 420px;
+	background-color: rgb(238, 238, 238);
+	overflow-y: auto;
+}
+
+.message {
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: 10px 10px 10px 10px;
+	padding: 5px 5px 5px 5px;
+	max-width: 80%;
+	height: fit-content;
+}
+
+.message-sent {
+	background-color: lightblue;
+	margin-left: auto;
+}
+
+.message-recived {
+	background-color: white;
+	margin-right: auto;
+}
+
+.conversation-message {
+	font-size: 14px;
+}
+
+.recomendations-container {
+	overflow-x: hide;
+	display: flex;
+	grid-auto-rows: minmax(min-content, max-content);
+	background-color: white;
+	border-bottom: 3px solid rgb(117, 156, 179);
+	height: 7vh;
+}
+
+.recomendation-button {
+	margin: 5px;
+}
+
+.form-input {
+	border: 0px;
+	border-radius: 0px;
+	height: 5vh;
+}
+
+.send-button {
+	display: inline-block;
+	width: 100%;
+	padding: 0.5rem 1rem;
+	font-size: 1.25rem;
+	background-color: white;
+	cursor: pointer;
+	height: 5vh;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(141, 141, 141, 0.247);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(141, 141, 141, 0.562);
+}
+
+@media only screen and (max-width: 600px) {
+	.chat-container {
+		width: 100vw;
+	}
+
+	.header-container {
+		height: 10vh;
+	}
+
+	.messages-container {
+		height: 75vh;
+	}
+
+	.recomendations-container {
+		height: 8vh;
+	}
+
+	.form-input {
+		height: 7vh;
+	}
+	
+	.send-button {
+		height: 7vh;
+	}
+}
+
+
+@media screen and (max-device-height: 600px) and (orientation : landscape){
+	.chat-container {
+		width: 100vw;
+	}
+
+	.header-container {
+		height: 15vh;
+	}
+
+	.messages-container {
+		height: 60vh;
+	}
+
+	.recomendations-container {
+		height: 15vh;
+	}
+
+	.form-input {
+		height: 100%;
+	}
+	
+	.send-button {
+		height: 100%;
+	}
+  }

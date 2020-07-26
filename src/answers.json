@@ -1,0 +1,95 @@
+[
+	{
+		"id": 0,
+		"isCard": false,
+		"text": "Hola! Soy Ro, el Bot",
+		"cardList": []
+	},
+	{
+		"id": 1,
+		"isCard": false,
+		"text": "Pero mis amigos me llaman RoBot",
+		"cardList": []
+	},
+	{
+		"id": 2,
+		"isCard": false,
+		"text": "Respuesta Aleatoria 1",
+		"cardList": []
+	},
+	{
+		"id": 3,
+		"isCard": false,
+		"text": "Respuesta Aleatoria 2",
+		"cardList": []
+	},
+	{
+		"id": 4,
+		"isCard": false,
+		"text": "Respuesta Aleatoria 3",
+		"cardList": []
+	},
+	{
+		"id": 5,
+		"isCard": false,
+		"text": "Respuesta Aleatoria 4",
+		"cardList": []
+	},
+	{
+		"id": 6,
+		"isCard": false,
+		"text": "Respuesta Aleatoria 5",
+		"cardList": []
+	},
+	{
+		"id": 7,
+		"isCard": false,
+		"text": "Respuesta Aleatoria 6",
+		"cardList": []
+	},
+	{
+		"id": 8,
+		"isCard": false,
+		"text": "Respuesta Aleatoria 7",
+		"cardList": []
+	},
+	{
+		"id": 9,
+		"isCard": false,
+		"text": "Respuesta Aleatoria 8",
+		"cardList": []
+	},
+	{
+		"id": 10,
+		"isCard": false,
+		"text": "Respuesta Aleatoria 9",
+		"cardList": []
+	},
+	{
+		"id": 11,
+		"isCard": false,
+		"text": "Aquí tienes las ultimas noticias: ",
+		"cardList": []
+	},
+	{
+		"id": 12,
+		"isCard": true,
+		"text": "",
+		"cardList": [
+			{
+				"cardTitle": "Naciones Unidas y ‘Catalina’: ayudando más allá de los síntomas de COVID-19",
+				"cardText": "«Catalina» es el nombre del chatbot que el Programa de las Naciones Unidas para el Desarrollo (PNUD) adjudicó a 1Millionbot... […]",
+				"cardImg": "https://ost.torrejuana.es/wp-content/uploads/2020/07/catalina-usuarios-1024x498.jpg",
+				"cardUrl": "https://ost.torrejuana.es/naciones-unidas-y-catalina-ayudando-mas-alla-de-los-sintomas-de-covid-19/",
+				"cardButton": "Ir a la noticia"
+			},
+			{
+				"cardTitle": "La Universidad de Alcalá presenta un nuevo asistente virtual para su página web",
+				"cardText": "Su nombre es Isidra, en homenaje a Mª Isidra de Guzmán, conocida como la Doctora de Alcalá, la primera mujer... […]",
+				"cardImg": "https://ost.torrejuana.es/wp-content/uploads/2020/07/isidra-universidad-alacala-de-henares-1024x644.png",
+				"cardUrl": "https://ost.torrejuana.es/la-universidad-de-alcala-presenta-un-nuevo-asistente-virtual/",
+				"cardButton": "Ir a la noticia"
+			}
+		]
+	}
+]
