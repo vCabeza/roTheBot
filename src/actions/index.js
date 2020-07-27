@@ -1,4 +1,4 @@
-import { SEND_MESSAGE_REQUEST, SEND_MESSAGE_SUCCESS } from './types';
+import { SEND_MESSAGE_REQUEST, SEND_MESSAGE_SUCCESS, CLEAN_CHAT } from './types';
 import answers from '../answers.json';
 
 function sayHello(dispatch) {
@@ -7,6 +7,10 @@ function sayHello(dispatch) {
 	answer.push(answers.find((answer) => answer.id === 1));
 	dispatch({ type: SEND_MESSAGE_SUCCESS, payload: answer });
 }
+
+export const cleanChat = () => (dispatch) => {
+	dispatch({ type: CLEAN_CHAT });
+};
 
 export const sendMessage = (message) => (dispatch) => {
 	dispatch({ type: SEND_MESSAGE_REQUEST, payload: message });

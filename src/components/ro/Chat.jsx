@@ -35,7 +35,9 @@ class Chat extends Component {
 	};
 
 	sendMessage = (e, message) => {
-		this.props.sendMessage(message);
+		if (message !== '') {
+			this.props.sendMessage(message);
+		}
 
 		this.setState({
 			message: '',
@@ -48,6 +50,7 @@ class Chat extends Component {
 		const imageSrc = '/ro-avatar.png';
 		const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
 			<a
+				className='white'
 				href=''
 				ref={ref}
 				onClick={(e) => {
@@ -60,15 +63,11 @@ class Chat extends Component {
 
 		return (
 			<div className='chat-container'>
-				<Navbar
-					className='header-container'
-					sticky='top'
-					bg='dark'
-					variant='dark'>
+				<Navbar className='header-container' sticky='top' variant='dark'>
 					<Navbar.Brand
 						onClick={() => this.props.chatVisibilityHandler()}
 						href='#'>
-						<FaWindowMinimize />
+						<FaWindowMinimize className='align-bottom' />
 					</Navbar.Brand>
 					<Navbar.Brand>
 						<Image
@@ -77,28 +76,29 @@ class Chat extends Component {
 							src={window.location.origin + imageSrc}
 							alt={imageSrc}
 						/>{' '}
-						Ro
+						<label className='align-bottom'>Ro</label>
 					</Navbar.Brand>
 					<Navbar.Collapse className='justify-content-end'>
 						<Dropdown alignRight={true}>
 							<Dropdown.Toggle as={CustomToggle}>
-								<FaBars />
+								<FaBars style={{ height: '2em', width: '2em' }} />,
 							</Dropdown.Toggle>
 
 							<Dropdown.Menu>
-								<Dropdown.Item eventKey='1'>Red</Dropdown.Item>
-								<Dropdown.Item eventKey='2'>Blue</Dropdown.Item>
-								<Dropdown.Item eventKey='1'>Red-Orange</Dropdown.Item>
+								<Dropdown.Item onClick={() => this.props.cleanChat()}>
+									Limpiar conversación
+								</Dropdown.Item>
 							</Dropdown.Menu>
 						</Dropdown>
 					</Navbar.Collapse>
 				</Navbar>
 				<div className='messages-container'>
-					{this.props.bot.messages.map((message) =>
+					{this.props.bot.messages.map((message, index) =>
 						message.isCard ? (
-							<ChatCard cardList={message.cardList}></ChatCard>
+							<ChatCard key={index} cardList={message.cardList}></ChatCard>
 						) : (
 							<div
+								key={index}
 								className={
 									message.sender
 										? 'message-sent message'
@@ -118,14 +118,14 @@ class Chat extends Component {
 				<div className='footer-container'>
 					<div className='recomendations-container'>
 						<Button
-							className='recomendation-button'
+							className='yellow-button'
 							variant='outline-primary'
 							onClick={(e) => this.sendMessage(e, 'Hola')}>
 							{' '}
 							Hola
 						</Button>
 						<Button
-							className='recomendation-button'
+							className='yellow-button'
 							variant='outline-primary'
 							onClick={(e) => this.sendMessage(e, 'Noticias')}>
 							{' '}

@@ -30,7 +30,6 @@ class App extends Component {
 			<div className='mini'>
 				<a
 					href='#'
-					className='send-button'
 					onClick={() => this.chatVisibilityHandler()}>
 					<Image fluid src={window.location.origin + imageSrc} alt={imageSrc} />
 				</a>
@@ -42,10 +41,9 @@ class App extends Component {
 		return (
 			<div className='App'>
 				<header className='App-header'></header>
-				<Navbar sticky='top' bg='dark' variant='dark'>
+				<Navbar className='header-container' sticky='top' variant='dark'>
 					<Navbar.Brand>Ro The Bot</Navbar.Brand>
 				</Navbar>
-
 				{chat}
 			</div>
 		);

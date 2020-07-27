@@ -1,4 +1,8 @@
-import { SEND_MESSAGE_REQUEST, SEND_MESSAGE_SUCCESS } from '../actions/types';
+import {
+	SEND_MESSAGE_REQUEST,
+	SEND_MESSAGE_SUCCESS,
+	CLEAN_CHAT,
+} from '../actions/types';
 
 const initialState = {
 	messages: [],
@@ -22,6 +26,17 @@ export default function (state = initialState, action) {
 				return {
 					...state,
 					messages: [...state.messages, ...action.payload],
+				};
+			} catch (e) {
+				console.log(e);
+			}
+			break;
+
+		case CLEAN_CHAT:
+			try {
+				return {
+					...state,
+					messages: [],
 				};
 			} catch (e) {
 				console.log(e);

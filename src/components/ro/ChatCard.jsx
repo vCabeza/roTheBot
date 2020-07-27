@@ -9,8 +9,8 @@ class ChatCard extends Component {
 				className='message-recived message'
 				style={{ width: '18rem', height: '400px' }}>
 				<Carousel controls={false}>
-					{this.props.cardList.map((card) => (
-						<Carousel.Item>
+					{this.props.cardList.map((card, index) => (
+						<Carousel.Item key={index}>
 							{card.cardImg ? (
 								<Card.Img
 									variant='top'
@@ -27,7 +27,7 @@ class ChatCard extends Component {
 									{card.cardText}
 								</Card.Text>
 								{card.cardUrl ? (
-									<Button href={card.cardUrl} variant='primary'>
+									<Button href={card.cardUrl} className='yellow-button-card'>
 										{card.cardButton}
 									</Button>
 								) : null}

@@ -1,12 +1,28 @@
 html {
-	background-color: rgb(235, 235, 235);
+	background-color: rgb(255, 255, 255);
 }
 .mini {
 	position: fixed;
-	max-width: 60px;
+	max-width: 140px;
 	height: auto;
 	bottom: 30px;
 	right: 30px;
+}
+
+.header-container {
+	background-color: #f2b54c;
+}
+
+.carousel-indicators .active {
+	background-color: #f2b54c;
+}
+
+.carousel-indicators li {
+	background-color: #f2b54ca2;
+}
+
+.white {
+	color: white !important;
 }
 
 .chat-container {
@@ -16,10 +32,11 @@ html {
 	right: 0px;
 	width: 380px;
 	box-shadow: -5px 5px 15px grey;
+	z-index: 9999;
 }
 
 .header-image {
-	max-width: 45px;
+	max-width: 40px;
 	height: auto;
 }
 
@@ -27,7 +44,7 @@ html {
 	display: grid;
 	grid-auto-rows: minmax(min-content, max-content);
 	height: 420px;
-	background-color: rgb(238, 238, 238);
+	background-color: #e6e6e6;
 	overflow-y: auto;
 }
 
@@ -42,8 +59,10 @@ html {
 }
 
 .message-sent {
-	background-color: lightblue;
+	background-color: #e6d96d;
 	margin-left: auto;
+	word-wrap: break-word;
+	overflow-x: auto;
 }
 
 .message-recived {
@@ -60,7 +79,7 @@ html {
 	display: flex;
 	grid-auto-rows: minmax(min-content, max-content);
 	background-color: white;
-	border-bottom: 3px solid rgb(117, 156, 179);
+	border-bottom: 3px solid #f2b54c;
 	height: 7vh;
 }
 
@@ -82,6 +101,34 @@ html {
 	background-color: white;
 	cursor: pointer;
 	height: 5vh;
+	color: #f2b54c;
+}
+
+.send-button:hover {
+	color: #d19c40;
+}
+
+.yellow-button {
+	color: #f2b54c;
+	border-color: #f2b54c;
+	margin: 5px;
+}
+
+.yellow-button:hover {
+	color: #fff;
+	background-color: #d19c40;
+	border-color: #d19c40;
+}
+
+.yellow-button-card {
+	background-color: #f2b54c;
+	border-color: #f2b54c;
+	margin: 5px;
+}
+
+.yellow-button-card:hover {
+	background-color: #d19c40;
+	border-color: #d19c40;
 }
 
 ::-webkit-scrollbar {
@@ -117,14 +164,13 @@ html {
 	.form-input {
 		height: 7vh;
 	}
-	
+
 	.send-button {
 		height: 7vh;
 	}
 }
 
-
-@media screen and (max-device-height: 600px) and (orientation : landscape){
+@media screen and (max-device-height: 600px) and (orientation: landscape) {
 	.chat-container {
 		width: 100vw;
 	}
@@ -144,8 +190,8 @@ html {
 	.form-input {
 		height: 100%;
 	}
-	
+
 	.send-button {
 		height: 100%;
 	}
-  }
+}
