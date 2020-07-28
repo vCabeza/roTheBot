@@ -43,7 +43,7 @@ class App extends Component {
 				)}
 
 				<a href='#' onClick={() => this.chatVisibilityHandler()}>
-					<Image fluid src={window.location.origin + imageSrc} alt={imageSrc} />
+					<Image fluid src={process.env.PUBLIC_URL + imageSrc} alt={imageSrc} />
 				</a>
 			</div>
 		) : (

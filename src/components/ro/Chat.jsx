@@ -73,7 +73,7 @@ class Chat extends Component {
 						<Image
 							className='header-image'
 							fluid
-							src={window.location.origin + imageSrc}
+							src={process.env.PUBLIC_URL + imageSrc}
 							alt={imageSrc}
 						/>{' '}
 						<label className='align-bottom'>Ro</label>
