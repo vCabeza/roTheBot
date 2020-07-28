@@ -9,7 +9,7 @@ import * as actions from '../actions';
 class App extends Component {
 	constructor(props) {
 		super(props);
-		this.state = { isChatHidden: true };
+		this.state = { isChatHidden: true, chatClicked: false };
 
 		this.chatVisibilityHandler = this.chatVisibilityHandler.bind(this);
 	}
@@ -21,6 +21,7 @@ class App extends Component {
 	chatVisibilityHandler() {
 		this.setState({
 			isChatHidden: !this.state.isChatHidden,
+			chatClicked: true,
 		});
 	}
 
@@ -28,9 +29,20 @@ class App extends Component {
 		const imageSrc = '/ro-avatar.png';
 		const chat = this.state.isChatHidden ? (
 			<div className='mini'>
-				<a
-					href='#'
-					onClick={() => this.chatVisibilityHandler()}>
+				{this.state.chatClicked ? null : (
+					<a
+						href='#'
+						className='presentation-text'
+						onClick={() => this.chatVisibilityHandler()}>
+						<div className='message-sent message'>
+							<div className='conversation-message'>
+								HOLA, SOY RO, ¿NECESITAS AYUDA?
+							</div>
+						</div>
+					</a>
+				)}
+
+				<a href='#' onClick={() => this.chatVisibilityHandler()}>
 					<Image fluid src={window.location.origin + imageSrc} alt={imageSrc} />
 				</a>
 			</div>
