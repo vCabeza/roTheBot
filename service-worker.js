@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/roTheBot/precache-manifest.63c1966c3426b819166f38056979a246.js"
+  "/roTheBot/precache-manifest.4d1213b1436c649584a7ec563e281c33.js"
 );
 
 self.addEventListener('message', (event) => {

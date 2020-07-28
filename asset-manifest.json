@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/roTheBot/static/css/main.ab502c3c.chunk.css",
-    "main.js": "/roTheBot/static/js/main.7a5d7c57.chunk.js",
-    "main.js.map": "/roTheBot/static/js/main.7a5d7c57.chunk.js.map",
+    "main.js": "/roTheBot/static/js/main.588dbd35.chunk.js",
+    "main.js.map": "/roTheBot/static/js/main.588dbd35.chunk.js.map",
     "runtime-main.js": "/roTheBot/static/js/runtime-main.86a6ecc3.js",
     "runtime-main.js.map": "/roTheBot/static/js/runtime-main.86a6ecc3.js.map",
     "static/css/2.af3c1da9.chunk.css": "/roTheBot/static/css/2.af3c1da9.chunk.css",
     "static/js/2.7e2d2c3d.chunk.js": "/roTheBot/static/js/2.7e2d2c3d.chunk.js",
     "static/js/2.7e2d2c3d.chunk.js.map": "/roTheBot/static/js/2.7e2d2c3d.chunk.js.map",
     "index.html": "/roTheBot/index.html",
-    "precache-manifest.63c1966c3426b819166f38056979a246.js": "/roTheBot/precache-manifest.63c1966c3426b819166f38056979a246.js",
+    "precache-manifest.4d1213b1436c649584a7ec563e281c33.js": "/roTheBot/precache-manifest.4d1213b1436c649584a7ec563e281c33.js",
     "service-worker.js": "/roTheBot/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/roTheBot/static/css/2.af3c1da9.chunk.css.map",
     "static/css/main.ab502c3c.chunk.css.map": "/roTheBot/static/css/main.ab502c3c.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.7e2d2c3d.chunk.js",
     "static/css/main.ab502c3c.chunk.css",
-    "static/js/main.7a5d7c57.chunk.js"
+    "static/js/main.588dbd35.chunk.js"
   ]
 }

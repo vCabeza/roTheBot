@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c15ecc5bd15fba8790c8c00e61856e77",
+    "revision": "3c122204dbda2ec4e8aa926fa8d2588b",
     "url": "/roTheBot/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/roTheBot/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "b9701524fb93e6e75832",
+    "revision": "ddd6022971be22fe7cba",
     "url": "/roTheBot/static/css/main.ab502c3c.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/roTheBot/static/js/2.7e2d2c3d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b9701524fb93e6e75832",
-    "url": "/roTheBot/static/js/main.7a5d7c57.chunk.js"
+    "revision": "ddd6022971be22fe7cba",
+    "url": "/roTheBot/static/js/main.588dbd35.chunk.js"
   },
   {
     "revision": "1c044b96f05b4f5530e2",
